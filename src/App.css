@@ -1,0 +1,282 @@
+.app-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1.2rem;
+    padding-top: 30px;
+    gap: 1.2rem;
+}
+
+.page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Guild Dropdown */
+.selected-guild {
+    font-size: 2em;
+}
+
+.guild-combobox {
+    min-width: 250px;
+}
+
+.guild-dropdown {
+    min-width: 250px;
+    max-width: 100%;
+}
+
+.guild-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.guild-icon img {
+    border-radius: 50%;
+    height: 32px; /* maybe bump it up from 28px */
+    width: 32px;
+}
+
+/* Spotify Widget */
+.spotify-widget {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-widget .icon {
+    margin-right: 5px;
+}
+
+/* Guild Manager */
+
+.guild-manager {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.guild-window {
+    width: 100%;
+}
+
+/* Playlist List */
+
+.button-icon {
+    font-size: 1.2em;
+}
+
+.suggestion-text {
+    width: 100%;
+    margin-top: 160px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    opacity: 0.5;
+}
+
+.suggestion-text > * {
+    margin: 10px;
+}
+
+.loader-container {
+    width: 100%;
+    padding-top: 160px;
+    text-align: center;
+}
+
+.playlist-list {
+    height: 100%;
+    width: 100%;
+
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playlist-list > .create-playlist-button {
+    margin-top: 10px;
+    font-size: 1em;
+}
+.playlist-item {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    font-size: 12px;
+}
+
+.playlist-item-inner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.playlist-item-inner > * {
+    width: 50%;
+    padding: 5px;
+    background-color: #2e2e2e;
+    border: 1px solid #424242;
+    border-radius: 5px;
+}
+
+.playlist-badge {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.playlist-badge > .badge-icon {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    transition: box-shadow 0.2s;
+}
+
+.badge-icon:hover {
+    filter: drop-shadow(5px 7px 8px #00000093);
+}
+
+.playlist-badge .helper-text {
+    position: absolute;
+    font-size: 16px;
+    top: -1.5rem;
+    transform: translateX(-25%);
+    transition: opacity 0.2s;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.badge-icon:hover + .helper-text {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Spotify Info */
+.spotify-playlist-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.spotify-playlist-info .icon {
+    display: flex;
+}
+
+.spotify-playlist-info .icon img {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.spotify-playlist-info .title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+.spotify-playlist-info .description {
+    text-align: left;
+    max-width: 90%;
+}
+
+.spotify-playlist-info .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Link Icon */
+.link-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2e2e2e;
+    border: 1px solid #424242;
+    outline: 5px solid #131313;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+
+    width: 48px; /* 👈 prevents stretching */
+    height: 48px;
+}
+
+.link-icon:hover {
+    cursor: pointer;
+    background-color: #292929;
+}
+
+.channel-info {
+    position: relative;
+}
+
+.channel-icon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.channel-icon > .channel-name {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* MiniLinkView */
+
+.mini-link-view {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.playlist-mini {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-mini .playlist-name {
+    font-size: 20px;
+}
+
+.playlist-mini img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.mini-channel {
+    font-size: 30px;
+}
+
+/* Unlink Modal */
