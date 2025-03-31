@@ -1,17 +1,6 @@
-# Turbo Bot Frontend
+# Spotibot Frontend
 
-This is the frontend for the Turbo Bot project, a modern and efficient web application designed to provide an intuitive user interface for interacting with the Turbo Bot backend.
-
-## Features
-
--   **Responsive Design**: Optimized for both desktop and mobile devices.
--   **Real-Time Updates**: Seamless integration with the backend for live data updates.
--   **User-Friendly Interface**: Clean and intuitive design for a great user experience.
-
-## Prerequisites
-
--   Node.js (v16 or higher)
--   npm or yarn package manager
+Spotibot is a Discord bot that allows users to connect Discord channels to Spotify playlists, automatically adding tracks sent to the channel to the playlist. Server playlists are configured through this frontend React application.
 
 ## Folder Structure
 
