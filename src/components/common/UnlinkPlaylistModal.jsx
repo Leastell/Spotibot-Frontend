@@ -35,9 +35,7 @@ const UnlinkPlaylistModal = ({
         setUnlinkPending(true);
         axios
             .delete(
-                import.meta.env.VITE_API_URL +
-                    "/api/playlists/" +
-                    playlistRecordId,
+                import.meta.env.VITE_API_URL + "/playlists/" + playlistRecordId,
                 {
                     withCredentials: true, // send cookies/session
                     headers: {

@@ -34,7 +34,7 @@ const LinkPlaylistModal = ({
         setLinkPending(true);
         axios
             .post(
-                import.meta.env.VITE_API_URL + "/api/playlists",
+                import.meta.env.VITE_API_URL + "/playlists",
                 {
                     guildId,
                     channelId: selectedChannel.id,

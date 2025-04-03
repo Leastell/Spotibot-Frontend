@@ -6,8 +6,7 @@ function SpotifyWidget() {
     const { user } = useUser();
 
     const connectSpotify = () => {
-        window.location.href =
-            import.meta.env.VITE_API_URL + "/api/auth/spotify";
+        window.location.href = import.meta.env.VITE_API_URL + "/auth/spotify";
     };
 
     return (

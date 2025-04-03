@@ -20,7 +20,7 @@ const PlaylistList = ({ guildId }) => {
     const updateGuildPlaylists = useCallback(() => {
         setGuildPlaylistsLoading(true);
         axios
-            .get(`${import.meta.env.VITE_API_URL}/api/playlists/${guildId}`, {
+            .get(`${import.meta.env.VITE_API_URL}/playlists/${guildId}`, {
                 withCredentials: true,
             })
             .then((res) => setGuildPlaylists(res.data))
@@ -34,9 +34,7 @@ const PlaylistList = ({ guildId }) => {
         const fetchGuildData = async () => {
             try {
                 const res = await axios.get(
-                    `${
-                        import.meta.env.VITE_API_URL
-                    }/api/discord/guild/${guildId}`,
+                    `${import.meta.env.VITE_API_URL}/discord/guild/${guildId}`,
                     { withCredentials: true }
                 );
                 setGuildData(res.data);
@@ -63,7 +61,7 @@ const PlaylistList = ({ guildId }) => {
 
     useEffect(() => {
         axios
-            .get(`${import.meta.env.VITE_API_URL}/api/spotify/playlists`, {
+            .get(`${import.meta.env.VITE_API_URL}/spotify/playlists`, {
                 withCredentials: true,
             })
             .then((res) => {

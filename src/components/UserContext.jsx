@@ -11,7 +11,7 @@ export const UserProvider = ({ children }) => {
     const updateUser = () => {
         setUserLoading(true);
 
-        fetch(import.meta.env.VITE_API_URL + "/api/auth/user", {
+        fetch(import.meta.env.VITE_API_URL + "/auth/user", {
             credentials: "include",
         })
             .then((res) => {
@@ -28,12 +28,11 @@ export const UserProvider = ({ children }) => {
     }, []);
 
     const login = () => {
-        window.location.href =
-            import.meta.env.VITE_API_URL + "/api/auth/discord";
+        window.location.href = import.meta.env.VITE_API_URL + "/auth/discord";
     };
 
     const logout = () => {
-        fetch(import.meta.env.VITE_API_URL + "/api/auth/logout", {
+        fetch(import.meta.env.VITE_API_URL + "/auth/logout", {
             credentials: "include",
         }).then(() => {
             updateUser();

@@ -11,7 +11,7 @@ const GuildManager = () => {
 
     useEffect(() => {
         axios
-            .get(import.meta.env.VITE_API_URL + "/api/discord/guilds", {
+            .get(import.meta.env.VITE_API_URL + "/discord/guilds", {
                 withCredentials: true,
             })
             .then((result) => {
