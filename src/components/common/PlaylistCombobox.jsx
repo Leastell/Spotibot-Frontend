@@ -45,9 +45,9 @@ const PlaylistCombobox = ({ playlists = [], onChange }) => {
                     }}
                     onClick={() => combobox.toggleDropdown()}
                     leftSection={
-                        selected?.images[selected.images.length]?.url ? (
+                        selected?.images?.[0]?.url ? (
                             <Avatar
-                                src={selected.images[0].url}
+                                src={selected?.images?.[0]?.url || ""}
                                 size="sm"
                                 radius="0"
                             />
@@ -65,7 +65,7 @@ const PlaylistCombobox = ({ playlists = [], onChange }) => {
                             <Combobox.Option value={pl.value} key={pl.value}>
                                 <Group>
                                     <Avatar
-                                        src={pl.images[0].url || ""}
+                                        src={pl?.images?.[0]?.url || ""}
                                         size="sm"
                                         radius="0"
                                     />
