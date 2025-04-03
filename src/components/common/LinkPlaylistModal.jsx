@@ -9,6 +9,7 @@ import {
     Group,
     Avatar,
     Checkbox,
+    Tooltip,
 } from "@mantine/core";
 import React, { useState } from "react";
 import PlaylistCombobox from "./PlaylistCombobox";
@@ -102,7 +103,7 @@ const LinkPlaylistModal = ({
                 <Group gap={"30px"}>
                     <Checkbox
                         label="Reset weekly"
-                        value={isWeekly}
+                        checked={isWeekly}
                         onChange={(event) => {
                             setIsWeekly(event.currentTarget.checked);
                         }}
@@ -112,7 +113,7 @@ const LinkPlaylistModal = ({
                     />
                     <Checkbox
                         label="Duplicates allowed"
-                        value={allowDuplicates}
+                        checked={allowDuplicates}
                         onChange={(event) => {
                             setAllowDuplicates(event.currentTarget.checked);
                         }}
