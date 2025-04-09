@@ -25,7 +25,12 @@ const PlaylistItem = ({ playlistData, channelData, updateGuildPlaylists }) => {
                 <div className="playlist-item-inner">
                     <div className="spotify-playlist-info">
                         <div className="icon">
-                            <img src={playlistData?.images?.[0]?.url || ""} />
+                            <img
+                                src={
+                                    playlistData?.images?.[0]?.url ||
+                                    "/empty_playlist.png"
+                                }
+                            />
                         </div>
                         <div className="text">
                             <span className="title">{playlistData.name}</span>

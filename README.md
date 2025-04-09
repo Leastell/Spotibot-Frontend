@@ -1,6 +1,6 @@
-# Spotibot Frontend
+# Turbo Music Frontend
 
-Spotibot is a Discord bot that allows users to connect Discord channels to Spotify playlists, automatically adding tracks sent to the channel to the playlist. Server playlists are configured through this frontend React application.
+Turbo Music is a Discord bot that allows users to connect Discord channels to Spotify playlists, automatically adding tracks sent to the channel to the playlist. Server playlists are configured through this frontend React application.
 
 ## Folder Structure
 

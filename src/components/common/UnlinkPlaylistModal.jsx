@@ -62,7 +62,7 @@ const UnlinkPlaylistModal = ({
                         marginBottom: "-5px",
                     }}
                 >
-                    Unlink a Playlist?
+                    Unlink Playlist?
                 </Title>
                 <Text>
                     Are you sure you want to disconnect this playlist? Tracks

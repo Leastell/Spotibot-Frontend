@@ -47,7 +47,10 @@ const PlaylistCombobox = ({ playlists = [], onChange }) => {
                     leftSection={
                         selected?.images?.[0]?.url ? (
                             <Avatar
-                                src={selected?.images?.[0]?.url || ""}
+                                src={
+                                    selected?.images?.[0]?.url ||
+                                    "/empty_playlist.png"
+                                }
                                 size="sm"
                                 radius="0"
                             />

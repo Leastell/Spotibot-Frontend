@@ -18,12 +18,12 @@ function App() {
                     className="logo"
                     style={{
                         margin: "-10px",
-                        width: "80px",
-                        height: "80px",
+                        width: "70px",
+                        height: "70px",
                     }}
                 >
                     <img
-                        src="/spotibot_transparent_center.png"
+                        src="/turbo.png"
                         style={{ width: "100%", height: "100%" }}
                     />
                 </div>

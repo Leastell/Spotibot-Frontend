@@ -5,7 +5,7 @@ const MiniLinkView = ({ playlist, channel }) => {
         <div className="mini-link-view">
             <div className="playlist-mini">
                 <img
-                    src={playlist?.images?.[0]?.url || ""}
+                    src={playlist?.images?.[0]?.url || "/empty_playlist.png"}
                     alt=""
                     className="playlist-icon"
                 />
